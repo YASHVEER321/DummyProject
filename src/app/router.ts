@@ -15,7 +15,7 @@
 // //export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes)
 
 // const appRoutes:Routes=[
-//     {path:'compo3',component:AppComponent3},
+//     {path:'compo3',component:AppComponent},
 //     {path:'compo2',component:AppComponent2}
 // ]
 
@@ -24,14 +24,12 @@
 import {ModuleWithProviders} from '@angular/core'
 import {Routes,RouterModule} from '@angular/router'
 
-import{AppComponent2} from './app.component2'
-import{AppComponent1} from './app.component1'
+import{AppComponent} from './app.component'
 //
 const appRoutes:Routes=[
-{path:'compo1',component:AppComponent1},
+//{path:'compo1',component:AppComponent1},
 //{path:'',component:AppComponent2},
-{path:'*',component:AppComponent1},
-{path:'compo2',component:AppComponent2}
+{path:'',component:AppComponent}
 ];
 
 export const AppRoutingModule:ModuleWithProviders=RouterModule.forRoot(appRoutes);
