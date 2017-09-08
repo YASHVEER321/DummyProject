@@ -21,19 +21,16 @@
 
 
   import {BrowserModule } from '@angular/platform-browser';
-//import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {DataGridModule} from 'primeng/primeng'
 
 import {homeComponent} from './home.component'
-//import {homeRoutingModule} from   './home.routes'
+import {homeRoutingModule} from   './home.routes'
 
 @NgModule({
   declarations:[homeComponent],
   imports:[
-// BrowesrModule
-// ,DataGridModule
-//,homeRoutingModule
+homeRoutingModule
   ],
   providers:[],
   //bootstrap:[homeComponent]
