@@ -2,10 +2,10 @@ import {ModuleWithProviders} from '@angular/core'
 import {Routes,RouterModule} from '@angular/router'
 
 import{AppComponent} from './app.component'
-import{homeComponent} from './home/home.component'
-const initialRoute = () => {
-  return true;
-};
+// import{homeComponent} from './home/home.component'
+// const initialRoute = () => {
+//   return true;
+// };
 const appRoutes:Routes=[
  {
     path: '', loadChildren: './home/home.module#homeModule'
