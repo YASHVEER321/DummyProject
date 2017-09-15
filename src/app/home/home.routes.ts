@@ -16,14 +16,23 @@
 
 
 
-import {ModuleWithProviders} from '@angular/core'
-import {Routes,RouterModule} from '@angular/router'
+import { ModuleWithProviders } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
 
-import {homeComponent} from './home.component'
+import { homeComponent } from './home.component'
 
-const homeRoutes:Routes=
-[
-{path:"home", component:homeComponent}
-];
+const homeRoutes: Routes =
+    [
+        {
+            path: "", component: homeComponent,
+            // children: [
+            //     // {
+            //     //     path: '', component: HomeComponent
+            //     // }
+            // ]
+        }
+    ];
 
- export const homeRoutingModule:ModuleWithProviders=RouterModule.forRoot(homeRoutes);
+//  export const homeRoutingModule:ModuleWithProviders=RouterModule.forRoot(homeRoutes);
+
+export const homeRoutingModule: ModuleWithProviders = RouterModule.forChild(homeRoutes)
