@@ -1,41 +1,21 @@
 
-// import { BrowserModule } from '@angular/platform-browser';
-// import { NgModule } from '@angular/core';
-// import {DataGridModule} from 'primeng/primeng';
-// import { AppComponent }  from './app.component';
-// import{AppRoutingModule} from './router';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { ButtonModule, CarouselModule, DialogModule, DataGridModule,TabViewModule } from 'primeng/primeng'
+// import {  } from 'primeng/primeng';
 
-// @NgModule({
-//   declarations: [
-//     AppComponent
-//   ],
-//   imports: [
-//     BrowserModule,
-//     DataGridModule,
-//     AppRoutingModule
-//   ],
-//   providers: [],
-//   bootstrap: [AppComponent]
-// })
-// export class AppModule { }
-
-
-  import {BrowserModule } from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {DataGridModule} from 'primeng/primeng'
-
-import {homeComponent} from './home.component'
-import {homeRoutingModule} from   './home.routes'
+import { homeComponent } from './home.component'
+import { homeRoutingModule } from './home.routes'
 
 @NgModule({
-  declarations:[homeComponent],
-  imports:[
-homeRoutingModule
+  declarations: [homeComponent],
+  imports: [
+    homeRoutingModule
   ],
-  providers:[],
+  providers: [],
   //bootstrap:[homeComponent]
 })
 
-export class homeModule{}
+export class homeModule { }
 
 
