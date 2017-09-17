@@ -10,10 +10,10 @@ const appRoutes:Routes=[
  {
     path: '', loadChildren: './home/home.module#homeModule'
   }, 
-//{path:'compo1',component:AppComponent1},
-//{path:'',component:homeComponent}
- //{path:'',component:homeComponent},
-//{path:'app',component:AppComponent}
+// {path:'compo1',component:AppComponent1},
+// {path:'',component:homeComponent}
+//  {path:'',component:homeComponent},
+// {path:'app',component:AppComponent}
 ];
 
 export const AppRoutingModule:ModuleWithProviders=RouterModule.forRoot(appRoutes);
