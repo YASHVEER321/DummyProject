@@ -1,0 +1,47 @@
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+<ul>
+  <li><a class="active" routerLink="about">Home</a></li>
+  <li><a routerLink="news">News</a></li>
+  <li><a routerLink="about">About</a></li>
+  <li><a routerLink="news">Contact</a></li>
+</ul>
+
+<div>
+  <ul>
+    <li routerLink="/news"> Home </li>
+    <li routerLink="/news">News</li>
+    <li routerLink="/about">Contact</li>
+    <li routerLink="/about">About</li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
