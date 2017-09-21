@@ -13,25 +13,32 @@ const homeRoutes: Routes =
     [
         {
             path: "", component: homeComponent,
-            
-        },
-        {
-           path: "header", component: headerComponent,
-             children: [
-                 {
-         //           path: 'header', component: headerComponent,
-                     path: 'footer', component: footerComponent
-                 }
-             ]
-        },
-        {
-            path: "news", component: newsComponent,
-            
-        },
-        {
+            children:[ 
+            {
+            path: "news", component: newsComponent
+        },        
+         {  
             path: "about", component: aboutComponent,
+            children:[
+               path: 'foot', component: footerComponent
+
+            ]
+            }
+        
+
+        ]
             
         },
+        // {
+        //    path: "header", component: headerComponent,
+        //      children: [
+        //          {
+        //  //           path: 'header', component: headerComponent,
+        //              path: 'footer', component: footerComponent
+        //          }
+        //      ]
+        // }
+       
     ];
 
   //export const homeRoutingModule:ModuleWithProviders=RouterModule.forRoot(homeRoutes);
