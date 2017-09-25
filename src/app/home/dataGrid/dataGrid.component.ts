@@ -4,13 +4,29 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'news-root',
-  templateUrl: './news.component.html',
+  templateUrl: './dataGrid.component.html',
   //styleUrls:  ['./footer.component.css']
 })
-export class newsComponent  {
+export class dataGridComponent  {
   title = ``;
   // data="yash"
   // cars: Car[];
+//     cars: MenuItem[];
+//     selectedCar:
+//     ngOnInit() {
+//       this.cars = [{},{}]
+
+// }
+let selectedCar: { vin: number, year: string ,brand: string,color: string}[] = [
+    { "vin": 0, "year": "Available", brand:"audi",color:"red"},
+    {  "vin": 0, "year": "Available", brand:"audi",color:"red"},
+    {  "vin": 0, "year": "Available", brand:"audi",color:"red"}
+];
+let cars: { vin: number, year: string ,brand: string,color: string}[] = [
+    { "vin": 0, "year": "Available", brand:"audi",color:"red"},
+    {  "vin": 0, "year": "Available", brand:"audi",color:"red"},
+    {  "vin": 0, "year": "Available", brand:"audi",color:"red"}
+];
 
     //constructor(private carService: CarService) { }
 

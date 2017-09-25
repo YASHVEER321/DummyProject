@@ -12,10 +12,11 @@ import { navComponent } from './navbaar/nav.component'
 import { newsComponent } from './news/news.component'
 import { aboutComponent } from './about/about.component'
 import { nestedComponent } from './nested/nested.component'
+import { dataGridComponent } from './dataGrid/dataGrid.component'
 
 @NgModule({
   declarations: [homeComponent,headerComponent,footerComponent,navComponent,
-  aboutComponent,newsComponent,nestedComponent,
+  aboutComponent,newsComponent,nestedComponent,dataGridComponent
   ],
   imports: [
     homeRoutingModule
