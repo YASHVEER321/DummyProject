@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ButtonModule, CarouselModule, DialogModule, DataGridModule,TabViewModule } from 'primeng/primeng'
-import { MenubarModule,MenuItem } from 'primeng/primeng';
+//import { MenubarModule,MenuItem } from 'primeng/primeng';
 
 import { homeComponent } from './home.component'
 import { headerComponent } from './header/header.component'
@@ -15,7 +15,7 @@ import { nestedComponent } from './nested/nested.component'
 
 @NgModule({
   declarations: [homeComponent,headerComponent,footerComponent,navComponent,
-  aboutComponent,newsComponent,nestedComponent
+  aboutComponent,newsComponent,nestedComponent,
   ],
   imports: [
     homeRoutingModule

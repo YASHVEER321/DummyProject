@@ -27,9 +27,14 @@ const homeRoutes: Routes =
                         { path: 'nested', component: nestedComponent }
 
                     ]
-                }
+                },
 
-
+                //  {
+                //     path: "nested", component: newsComponent,
+                //     children: [
+                //         { path: 'nested', component: nestedComponent }
+                //     ]
+                // },
             ]
 
         },
