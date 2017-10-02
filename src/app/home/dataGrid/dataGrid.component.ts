@@ -1,6 +1,11 @@
-import { Component } from '@angular/core';
-// import {Car} from './interface';
-//import {CarService} from './service';
+import { Component,OnInit } from '@angular/core';
+
+
+import {Car} from './car.component';
+import {CarService} from './service.component';
+
+// import {Header} from 'primeng/primeng';
+// import {Footer} from 'primeng/primeng';
 
 @Component({
   selector: 'news-root',
@@ -8,47 +13,26 @@ import { Component } from '@angular/core';
   //styleUrls:  ['./footer.component.css']
 })
 export class dataGridComponent  {
-  title = ``;
-  // data="yash"
-  // cars: Car[];
-//     cars: MenuItem[];
-//     selectedCar:
+//     cars: Car[];
+    
+//     selectedCar: Car;
+    
+//     displayDialog: boolean;
+
+//     constructor(private carService: CarService) { }
+
 //     ngOnInit() {
-//       this.cars = [{},{}]
-
+//         this.carService.getCarsSmall().then(cars => this.cars = cars);
+//     }
+    
+//     selectCar(car: Car) {
+//         this.selectedCar = car;
+//         this.displayDialog = true;
+//     }
+    
+//     onDialogHide() {
+//         this.selectedCar = null;
 // }
-let selectedCar: { vin: number, year: string ,brand: string,color: string}[] = [
-    { "vin": 0, "year": "Available", brand:"audi",color:"red"},
-    {  "vin": 0, "year": "Available", brand:"audi",color:"red"},
-    {  "vin": 0, "year": "Available", brand:"audi",color:"red"}
-];
-let cars: { vin: number, year: string ,brand: string,color: string}[] = [
-    { "vin": 0, "year": "Available", brand:"audi",color:"red"},
-    {  "vin": 0, "year": "Available", brand:"audi",color:"red"},
-    {  "vin": 0, "year": "Available", brand:"audi",color:"red"}
-];
-
-    //constructor(private carService: CarService) { }
-
-    // ngOnInit() {
-    //     this.carService.getCarsLarge().then(cars => this.cars = cars);
-    // }
-
-// let userTestStatus: { id: number, name: string }[] = [
-//     { "id": 0, "name": "Available" },
-//     { "id": 1, "name": "Ready" },
-//     { "id": 2, "name": "Started" }
-// ];
-
-//let arr1: boolean[] = [];
-
-
-
-    //var cars:{vin:string,year:string,brand:string,color:string,price:string,saleDate:string}[]=[{"vin":"Audi"},{"year":"1994"},{"brand":"Audi"},{"color":"black"},{"price":"2m inr"},{"saleDate":"2019"}]
-
-     // cars=; 
-
-
 }
 
 

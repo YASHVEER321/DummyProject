@@ -5,7 +5,7 @@ import {DataGridModule} from 'primeng/primeng';
 import { AppComponent }  from './app.component';
 //import{homeComponent} from './home/home.component'
 import {AccordionModule,TabViewModule} from 'primeng/primeng';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; import {CarService} from './service.component';
 
 import{AppRoutingModule} from './router';
 
@@ -21,7 +21,7 @@ import{AppRoutingModule} from './router';
     AccordionModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

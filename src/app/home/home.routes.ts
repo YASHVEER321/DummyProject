@@ -29,17 +29,11 @@ const homeRoutes: Routes =
                     ]
                 },
 
-                //  {
-                //     path: "nested", component: newsComponent,
-                //     children: [
-                //         { path: 'nested', component: nestedComponent }
-                //     ]
-                // },
+           {path: "datagrid", component: dataGridComponent}
             ]
 
         },
         {
-           path: "datagrid", component: dataGridComponent,
          //     children: [
          //         {
          // //           path: 'header', component: headerComponent,
