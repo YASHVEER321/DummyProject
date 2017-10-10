@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { ButtonModule, CarouselModule, DialogModule, DataGridModule,TabViewModule } from 'primeng/primeng'
 import { CommonModule } from '@angular/common';  
 
+
 import { homeComponent } from './home.component'
 import { headerComponent } from './header/header.component'
 import { footerComponent } from './footer/footer.component'
@@ -13,7 +14,7 @@ import { newsComponent } from './news/news.component'
 import { aboutComponent } from './about/about.component'
 import { nestedComponent } from './nested/nested.component'
 import { dataGridComponent } from './dataGrid/dataGrid.component'
-import {PanelModule,GrowlModule, SharedModule,SplitButtonModule} from 'primeng/primeng';
+import { GrowlModule,,SharedModuleSplitButtonModule,DataTableModule ,InputTextModule,PanelModule} from 'primeng/primeng';
 
 
 
@@ -33,11 +34,20 @@ import {PanelModule,GrowlModule, SharedModule,SplitButtonModule} from 'primeng/p
      SharedModule
   
 
+// =======
+  // aboutComponent,newsComponent,nestedComponent,dataGridComponent
+  
+  // ],
+  // imports: [
+  //   homeRoutingModule,DataTableModule,DataGridModule,
+  //   InputTextModule,DataTableModule,ButtonModule,DialogModule
+// >>>>>>> bdd9adcc88373836db2f044036ac615bbb2e1c60
   ],
   providers: [],
   //bootstrap:[homeComponent]
 })
 
 export class homeModule { }
+
 
 

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {DataGridModule} from 'primeng/primeng';
+import {DataGridModule,DataTableModule} from 'primeng/primeng';
 
 import { AppComponent }  from './app.component';
 //import{homeComponent} from './home/home.component'
@@ -16,7 +16,7 @@ import{AppRoutingModule} from './router';
   ],
   imports: [
     BrowserModule,
-    DataGridModule,
+    DataGridModule,DataTableModule,
     AppRoutingModule,
     AccordionModule,
     BrowserAnimationsModule
