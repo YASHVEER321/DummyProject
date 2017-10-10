@@ -14,7 +14,7 @@ import { newsComponent } from './news/news.component'
 import { aboutComponent } from './about/about.component'
 import { nestedComponent } from './nested/nested.component'
 import { dataGridComponent } from './dataGrid/dataGrid.component'
-import { GrowlModule,,SharedModuleSplitButtonModule,DataTableModule ,InputTextModule,PanelModule} from 'primeng/primeng';
+import { GrowlModule,SharedModule,SplitButtonModule,DataTableModule ,InputTextModule,PanelModule} from 'primeng/primeng';
 
 
 
