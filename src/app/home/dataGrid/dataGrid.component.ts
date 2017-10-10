@@ -1,8 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 
 
-import {Car} from './car.component';
-import {CarService} from './service.component';
+import {Message} from './message.component';
+import {MenuItem} from './menuItem.component';
 
 // import {Header} from 'primeng/primeng';
 // import {Footer} from 'primeng/primeng';
@@ -12,27 +12,44 @@ import {CarService} from './service.component';
   templateUrl: './dataGrid.component.html',
   //styleUrls:  ['./footer.component.css']
 })
-export class dataGridComponent  {
-//     cars: Car[];
-    
-//     selectedCar: Car;
-    
-//     displayDialog: boolean;
 
-//     constructor(private carService: CarService) { }
+ 
 
-//     ngOnInit() {
-//         this.carService.getCarsSmall().then(cars => this.cars = cars);
-//     }
+export class dataGridComponent implements OnInit  {
+
+msgs: Message[] = [];
     
-//     selectCar(car: Car) {
-//         this.selectedCar = car;
-//         this.displayDialog = true;
-//     }
+    items: MenuItem[];
     
-//     onDialogHide() {
-//         this.selectedCar = null;
-// }
+    ngOnInit() {
+        this.items = [
+            {label: 'Update', icon: 'fa-refresh', command: () => {
+                this.update();
+            }},
+            {label: 'Delete', icon: 'fa-close', command: () => {
+                this.delete();
+            }},
+            {label: 'Angular.io', icon: 'fa-link', url: 'http://angular.io'},
+            {label: 'Theming', icon: 'fa-paint-brush', routerLink: ['/theming']}
+        ];
+    }
+
+    save() {
+        this.msgs = [];
+        this.msgs.push({severity:'info', summary:'Success', detail:'Data Saved'});
+    }
+
+    update() {
+        this.msgs = [];
+        this.msgs.push({severity:'info', summary:'Success', detail:'Data Updated'});
+    }
+
+    delete() {
+        this.msgs = [];
+this.msgs.push({severity:'info', summary:'Success', detail:'Data Deleted'});
+    }
+
+
 }
 
 
